@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Calculator</title>
+</head>
+<body>
+
+  <h1>Calculator</h1>
+
+  <div class="body">
+
+    <!-- INPUT AND OUTPUT AREA -->
+
+    <div id="output">
+      <input type="text" id="num1" disabled>
+    </div>
+    <hr>
+
+    <!-- END INPUT AND OUTPUT AREA -->
+
+    <!-- ADD BUTTONS -->
+
+    <section class="buttons">
+      <button onclick="Display('7')">7</button>
+      <button onclick="Display('8')">8</button>
+      <button onclick="Display('9')">9</button>
+      <button id="operations"  onclick="Display('+')">+</button>
+      <br>
+      <button onclick="Display('4')">4</button>
+      <button onclick="Display('5')">5</button>
+      <button onclick="Display('6')">6</button>
+      <button id="operations" onclick="Display('-')">-</button>
+      <br>
+      <button onclick="Display('1')">1</button>
+      <button onclick="Display('2')">2</button>
+      <button onclick="Display('3')">3</button>
+      <button id="operations" onclick="Display('*')">*</button>
+      <br>
+      <button id="operations">C</button>
+      <button onclick="Display('0')">0</button>
+      <button id="operations" onclick="Display('/')">/</button>
+      <button id="operations" onclick="getResult()">=</button>
+    </section>
+
+    <!-- END ADD BUTTONS -->
+    
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>
